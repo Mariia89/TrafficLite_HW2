@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,17 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLite_HW2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JA4-Cz-xbV">
-                                <rect key="frame" x="128" y="116" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzK-Bm-f7d">
-                                <rect key="frame" x="171.66666666666666" y="607" width="47" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzK-Bm-f7d">
+                                <rect key="frame" x="183.5" y="659" width="47" height="39"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -34,19 +28,50 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PU2-Rr-dcI"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yyi-yS-OSd">
-                                <rect key="frame" x="128" y="271" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yyi-yS-OSd">
+                                <rect key="frame" x="143" y="296" width="128" height="128"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="4GZ-2m-pPk"/>
+                                    <constraint firstAttribute="height" constant="128" id="pKq-q6-b5B"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dEN-Q3-5e3">
-                                <rect key="frame" x="131" y="424" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dEN-Q3-5e3">
+                                <rect key="frame" x="143" y="476" width="128" height="128"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="dbJ-pA-qeH"/>
+                                    <constraint firstAttribute="width" constant="128" id="hdA-Na-ZLu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JA4-Cz-xbV">
+                                <rect key="frame" x="143" y="116" width="128" height="128"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="00N-aF-hG0"/>
+                                    <constraint firstAttribute="height" constant="128" id="3fN-Eq-NNc"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dEN-Q3-5e3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="4D9-aT-wj0"/>
+                            <constraint firstItem="JA4-Cz-xbV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="767-GL-g50"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KzK-Bm-f7d" secondAttribute="bottom" constant="164" id="8ry-ab-goG"/>
+                            <constraint firstItem="Yyi-yS-OSd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="91w-MG-fwg"/>
+                            <constraint firstItem="KzK-Bm-f7d" firstAttribute="top" secondItem="dEN-Q3-5e3" secondAttribute="bottom" constant="55" id="CRa-wk-oSG"/>
+                            <constraint firstItem="KzK-Bm-f7d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GPd-04-Oeo"/>
+                            <constraint firstItem="dEN-Q3-5e3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JcE-Gj-Fjo"/>
+                            <constraint firstItem="JA4-Cz-xbV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="KGb-tG-dHx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yyi-yS-OSd" secondAttribute="trailing" constant="143" id="Lzu-kb-g4D"/>
+                            <constraint firstItem="JA4-Cz-xbV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XDB-Qf-eNU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JA4-Cz-xbV" secondAttribute="trailing" constant="143" id="Xbw-c0-T9W"/>
+                            <constraint firstItem="Yyi-yS-OSd" firstAttribute="top" secondItem="JA4-Cz-xbV" secondAttribute="bottom" constant="52" id="bYN-De-czJ"/>
+                            <constraint firstItem="Yyi-yS-OSd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="dd8-wV-U2K"/>
+                            <constraint firstItem="dEN-Q3-5e3" firstAttribute="top" secondItem="Yyi-yS-OSd" secondAttribute="bottom" constant="52" id="eQa-cc-NYQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dEN-Q3-5e3" secondAttribute="trailing" constant="143" id="f0P-08-1BO"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="greenCircle" destination="dEN-Q3-5e3" id="PkJ-N9-pKT"/>

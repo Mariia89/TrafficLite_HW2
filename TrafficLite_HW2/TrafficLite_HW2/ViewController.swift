@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet var startButton: UIButton!
     @IBOutlet var redCircle: UIView!
     @IBOutlet var greenCircle: UIView!
-    @IBOutlet weak var yellowCircle: UIView!
+    @IBOutlet var yellowCircle: UIView!
     
     var state: TrafficLightState = .none
     
@@ -32,10 +32,10 @@ class ViewController: UIViewController {
         startButton.layer.cornerRadius = 10
     }
 
-    @IBAction func buttonTapped(_ sender: Any) {
+    @IBAction func buttonTapped(_: Any) {
         var buttonConfiguration = UIButton.Configuration.filled()
-        buttonConfiguration.baseBackgroundColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
         buttonConfiguration.title = "Next"
+        buttonConfiguration.baseBackgroundColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
         buttonConfiguration.buttonSize = .large
         buttonConfiguration.cornerStyle = .large
         buttonConfiguration.attributedTitle?.font = UIFont.systemFont(ofSize: 24)
