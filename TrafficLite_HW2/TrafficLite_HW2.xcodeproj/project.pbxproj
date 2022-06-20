@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5468E9F5285F1952004FC7B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468E9F4285F1952004FC7B9 /* AppDelegate.swift */; };
 		5468E9F7285F1952004FC7B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468E9F6285F1952004FC7B9 /* SceneDelegate.swift */; };
-		5468E9F9285F1952004FC7B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5468E9F8285F1952004FC7B9 /* ViewController.swift */; };
 		5468E9FC285F1952004FC7B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5468E9FA285F1952004FC7B9 /* Main.storyboard */; };
 		5468E9FE285F1953004FC7B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5468E9FD285F1953004FC7B9 /* Assets.xcassets */; };
 		5468EA01285F1953004FC7B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5468E9FF285F1953004FC7B9 /* LaunchScreen.storyboard */; };
@@ -138,7 +137,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5468E9F9285F1952004FC7B9 /* ViewController.swift in Sources */,
 				5468E9F5285F1952004FC7B9 /* AppDelegate.swift in Sources */,
 				5468E9F7285F1952004FC7B9 /* SceneDelegate.swift in Sources */,
 			);
