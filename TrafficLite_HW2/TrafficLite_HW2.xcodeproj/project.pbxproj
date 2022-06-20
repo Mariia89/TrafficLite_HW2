@@ -39,8 +39,8 @@
 		5468E9E8285F1952004FC7B9 = {
 			isa = PBXGroup;
 			children = (
-				5468E9F3285F1952004FC7B9 /* TrafficLite_HW2 */,
 				5468E9F2285F1952004FC7B9 /* Products */,
+				5468E9F3285F1952004FC7B9 /* TrafficLite_HW2 */,
 			);
 			sourceTree = "<group>";
 		};
